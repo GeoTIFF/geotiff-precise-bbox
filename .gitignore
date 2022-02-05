@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# other
+pnpm-lock.yaml
+*.tif
+*.tiff
+geotiff-precise-bbox.min.js

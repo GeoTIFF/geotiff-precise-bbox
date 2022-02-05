@@ -1,0 +1,45 @@
+{
+  "name": "geotiff-precise-bbox",
+  "version": "0.0.0",
+  "description": "Get the Most Precise Bounding Box for a GeoTIFF. Avoid Floating Point Arithmetic Issues.",
+  "main": "geotiff-precise-bbox.js",
+  "jsdelivr": "dist/geotiff-precise-bbox.min.js",
+  "unpkg": "dist/geotiff-precise-bbox.min.js",
+  "files": [
+    "geotiff-precise-bbox.js",
+    "geotiff-precise-bbox.min.js"
+  ],
+  "scripts": {
+    "build": "npx browserify geotiff-precise-bbox.js > geotiff-precise-bbox.min.js",
+    "format": "npx prettier --arrow-parens=avoid --print-width=200 --trailing-comma=none --write *.js",
+    "setup": "cd data && ./setup.sh",
+    "test": "node test.js",
+    "webpack:version": "npx webpack --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeoTIFF/geotiff-precise-bbox.git"
+  },
+  "keywords": [
+    "bbox",
+    "image",
+    "geotiff",
+    "raster",
+    "tiff"
+  ],
+  "author": "Daniel J. Dufour",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/GeoTIFF/geotiff-precise-bbox/issues"
+  },
+  "homepage": "https://github.com/GeoTIFF/geotiff-precise-bbox#readme",
+  "devDependencies": {
+    "find-and-read": "^1.1.0",
+    "flug": "^2.2.0",
+    "geotiff": "^2.0.4",
+    "toab": "^2.2.1"
+  },
+  "dependencies": {
+    "preciso": "^0.1.1"
+  }
+}

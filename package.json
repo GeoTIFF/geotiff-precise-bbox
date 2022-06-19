@@ -13,7 +13,7 @@
     "build": "npx browserify geotiff-precise-bbox.js > geotiff-precise-bbox.min.js",
     "format": "npx prettier --arrow-parens=avoid --print-width=200 --trailing-comma=none --write *.js",
     "setup": "cd data && ./setup.sh",
-    "test": "node require-esm-as-empty-object test.js",
+    "test": "node -r require-esm-as-empty-object test.js",
     "webpack:version": "npx webpack --version"
   },
   "repository": {
@@ -36,7 +36,7 @@
   "devDependencies": {
     "find-and-read": "^1.1.0",
     "flug": "^2.2.0",
-    "geotiff": "^2.0.4",
+    "geotiff": "^2.0.5",
     "require-esm-as-empty-object": "^0.0.1",
     "toab": "^2.2.1"
   },

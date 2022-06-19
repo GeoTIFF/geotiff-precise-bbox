@@ -1,6 +1,6 @@
 {
   "name": "geotiff-precise-bbox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get the Most Precise Bounding Box for a GeoTIFF. Avoid Floating Point Arithmetic Issues.",
   "main": "geotiff-precise-bbox.js",
   "jsdelivr": "dist/geotiff-precise-bbox.min.js",

@@ -19,7 +19,7 @@ async function loadImageFromURL(url) {
   return tif.getImage();
 }
 
-tests.forEach(({ filename, url, bbox: expected_bbox, precise_bbox: expected_precise_bbox }) => {
+tests.filter(t => !t.skip).forEach(({ filename, url, bbox: expected_bbox, precise_bbox: expected_precise_bbox }) => {
   test(filename || url, async ({ eq }) => {
     let image;
     if (filename) image = await loadImage(filename);

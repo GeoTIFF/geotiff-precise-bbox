@@ -22,6 +22,9 @@ if (typeof define === "function" && define.amd)
   define(function () {
     return getPreciseBoundingBox;
   });
-if (typeof module === "object") module.exports = getPreciseBoundingBox;
+if (typeof module === "object") {
+  module.exports = getPreciseBoundingBox;
+  module.exports.default = getPreciseBoundingBox;
+}
 if (typeof window === "object") window.getPreciseBoundingBox = getPreciseBoundingBox;
 if (typeof self === "object") self.getPreciseBoundingBox = getPreciseBoundingBox;

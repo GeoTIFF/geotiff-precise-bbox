@@ -5,15 +5,17 @@
   "main": "geotiff-precise-bbox.js",
   "jsdelivr": "dist/geotiff-precise-bbox.min.js",
   "unpkg": "dist/geotiff-precise-bbox.min.js",
+  "types": "geotiff-precise-bbox.d.ts",
   "files": [
+    "geotiff-precise-bbox.d.ts",
     "geotiff-precise-bbox.js",
     "geotiff-precise-bbox.min.js"
   ],
   "scripts": {
     "build": "npx browserify geotiff-precise-bbox.js > geotiff-precise-bbox.min.js",
-    "format": "npx prettier --arrow-parens=avoid --print-width=200 --trailing-comma=none --write *.js",
+    "format": "npx prettier --arrow-parens=avoid --print-width=200 --trailing-comma=none --write *.js *.ts",
     "setup": "cd data && ./setup.sh",
-    "test": "node -r require-esm-as-empty-object test.js",
+    "test": "node -r require-esm-deasync ./test.js",
     "webpack:version": "npx webpack --version"
   },
   "repository": {
@@ -34,13 +36,14 @@
   },
   "homepage": "https://github.com/GeoTIFF/geotiff-precise-bbox#readme",
   "devDependencies": {
-    "find-and-read": "^1.1.0",
-    "flug": "^2.2.0",
+    "deasync": "^0.1.28",
+    "find-and-read": "^1.2.0",
+    "flug": "^2.3.1",
     "geotiff": "^2.0.5",
-    "require-esm-as-empty-object": "^0.0.1",
-    "toab": "^2.2.1"
+    "require-esm-deasync": "^0.1.0",
+    "toab": "^2.3.0"
   },
   "dependencies": {
-    "preciso": "^0.1.1"
+    "preciso": "^0.8.0"
   }
 }

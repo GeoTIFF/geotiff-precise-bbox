@@ -108,3 +108,4 @@ pnpm-lock.yaml
 *.tif
 *.tiff
 geotiff-precise-bbox.min.js
+.DS_Store

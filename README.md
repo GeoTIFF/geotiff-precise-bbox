@@ -1,5 +1,5 @@
 # geotiff-precise-bbox
-Get the Most Precise Bounding Box for a GeoTIFF.  Avoid Floating Point Arithmetic Issues.
+Get the Most Precise Bounding Box for a GeoTIFF.  Avoid Floating Point Arithmetic Issues.  Supports Rotation.
 
 # install
 ```bash

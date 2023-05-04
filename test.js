@@ -36,6 +36,8 @@ tests
       const pixel_width = Math.abs(xScale);
       const pixel_height = Math.abs(yScale);
 
+      if (image.fileDirectory?.ModelTransformation) return; // probably skewed or rotated
+
       // reverse and get pixel height and width from getPreciseBoundingBox(image)
       const [precise_xmin, precise_ymin, precise_xmax, precise_ymax] = actual_precise_bbox;
       const precise_pixel_width = Number(divide(subtract(precise_xmax, precise_xmin), image.getWidth().toString()));
